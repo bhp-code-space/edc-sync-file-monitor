@@ -28,6 +28,16 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+SITE_ID = 40
+
+REVIEWER_SITE_ID = 1
+
+ETC_DIR = os.path.join('/etc/', APP_NAME)
+
+LOGIN_REDIRECT_URL = 'home_url'
+
+INDEX_PAGE = 'edc-sync-file-monitor.bhp.org.bw:8000'
+
 
 # Application definition
 
@@ -41,8 +51,8 @@ INSTALLED_APPS = [
     'django_crypto_fields.apps.AppConfig',
     'django_revision.apps.AppConfig',
     'django_js_reverse',
-    'edc_base.apps.AppConfig',
     'edc_device.apps.AppConfig',
+    'edc_sync_file_monitor.apps.EdcBaseAppConfig',
     'edc_sync_file_monitor.apps.AppConfig',
 ]
 
@@ -133,4 +143,4 @@ CORS_ORIGIN_ALLOW_ALL = True
 STATIC_URL = '/static/'
 
 GIT_DIR = BASE_DIR
-KEY_PATH = os.path.join(BASE_DIR, 'crypto_fields')
+# KEY_PATH = os.path.join(BASE_DIR, 'crypto_fields')
