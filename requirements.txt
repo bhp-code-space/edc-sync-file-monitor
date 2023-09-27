@@ -1,4 +1,4 @@
-backports.zoneinfo;python_version<"3.9"
+backports.zoneinfo==0.2.1;python_version<"3.9"
 edc-constants
 edc-model-fields
 git+https://github.com/botswana-harvard/django-crypto-fields.git@develop#egg=django_crypto_fields
