@@ -1,4 +1,4 @@
-# edc-sync-file-monitor
+# edc-sync-file-monitor ![Build Status](https://github.com/bhp-code-space/edc-sync-file-monitor/actions/workflows/django.yml/badge.svg) [![Coverage Status](https://codecov.io/gh/bhp-code-space/edc-sync-file-monitor/branch/develop/graph/badge.svg?token=696b0c18-d3de-40e3-8b4e-7c066f13d81c)](https://codecov.io/gh/bhp-code-space/edc-data-manager)
 
 This module monitors files on a specified directory for a remote machine that  uses `edc-sync-files` module
 
