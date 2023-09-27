@@ -23,6 +23,8 @@ APP_NAME = 'edc_sync_file_monitor'
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'p0xmt&oz#=dt1-)z0dex=r@b8r#^q*8xe_ckfxs)3q(#*ol(+0'
 
+KEY_PATH = os.path.join(BASE_DIR, 'crypto_fields')
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 

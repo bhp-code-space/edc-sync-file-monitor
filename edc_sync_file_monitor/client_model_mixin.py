@@ -1,12 +1,10 @@
 import os
-import paramiko
 import socket
 
-from paramiko.ssh_exception import (
-    BadHostKeyException, AuthenticationException, SSHException)
-
-
+import paramiko
 from django.db import models
+from paramiko.ssh_exception import (AuthenticationException, BadHostKeyException,
+                                    SSHException)
 
 
 class ClientModelMixin(models.Model):
@@ -33,7 +31,7 @@ class ClientModelMixin(models.Model):
                         _ftp.chdir(self.remote_dirname)
                     files = _ftp.listdir()
                     files = [file for file in files if file.endswith('.json')]
-#                     ftp.close()
+        #                     ftp.close()
         return files
 
     @property
@@ -41,7 +39,7 @@ class ClientModelMixin(models.Model):
         """Return True if remote machine is up.
         """
         if self.active:
-            return True if os.system("ping -c 1 " + self.sftp_url) is 0 else False
+            return True if os.system("ping -c 1 " + self.sftp_url) == 0 else False
         return False
 
     class Meta:

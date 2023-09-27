@@ -11,7 +11,7 @@ class AppConfig(DjangoAppConfig):
 
     protocol_sites = {
         'ESR21 Sites': 'esr21_site',
-        }
+    }
 
 
 class EdcBaseAppConfig(BaseEdcBaseAppConfig):
